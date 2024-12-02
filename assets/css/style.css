@@ -131,9 +131,6 @@ html {
   scroll-behavior: smooth;
 }
 
-#spotify{
-  /* margin-bottom: 60px; */
-}
 
 body {
   background-color: var(--white);
@@ -218,7 +215,17 @@ body.nav-active { overflow: hidden; }
 
 .section-text { font-size: 18px; }
 
-.section-title { margin-block-end: 16px; }
+.section-title {
+  margin-block-end: 16px;
+}
+
+.section-text2 { font-size: 18px; }
+
+.section-title2 {
+  margin-top: 20px;
+  margin-block-end: 16px;
+  font-size: 32px;
+}
 
 .grid-list {
   display: grid;
@@ -543,6 +550,7 @@ div.contact-card {
 
 .input-field::placeholder { color: var(--manatee); }
 
+
 textarea.input-field {
   min-height: 120px;
   height: 120px;
@@ -561,13 +569,22 @@ textarea.input-field {
 .footer { padding-block: 40px; }
 
 .copyright { 
+  transition: 0.4s;
   margin-block-end: 12px;
   opacity: 0.65;
+  display:flex;
+}
+
+.copyright a:hover {
+  transition: 0.4s;
+  color: #7FACFC;
+}
+
+.copyright a {
+  transition: 0.5s;
 }
 
 .footer .social-link { color: var(--charcoal); }
-
-
 
 
 
@@ -669,7 +686,7 @@ textarea.input-field {
 
   .footer .container {
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items: center;
   }
 
@@ -908,4 +925,27 @@ textarea.input-field {
   }
   
 
+}
+
+@media (max-width:858px) {
+
+  div.contact-card {
+    padding: 40px;
+  }
+
+  .section-text2 { font-size: 15.5px; }
+
+.section-title2 {
+  margin-top: 20px;
+  margin-block-end: 16px;
+  font-size: 28px;
+}
+
+.section-text { font-size: 15.5px; }
+
+.section-title {
+  margin-top: 20px;
+  margin-block-end: 16px;
+  font-size: 28px;
+}
 }
