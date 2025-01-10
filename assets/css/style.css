@@ -505,6 +505,7 @@ body.nav-active { overflow: hidden; }
 .project-card .card-text { margin-block-end: 20px; }
 
 .project-card .btn-text {
+  margin-bottom: 15px;
   display: flex;
   align-items: center;
   gap: 5px;
